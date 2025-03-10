@@ -124,8 +124,6 @@ MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'f1ticketsapp', 'static')]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 # Redirect to the index page after login
 
 LOGIN_URL = 'login.html'
