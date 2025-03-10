@@ -1,0 +1,45 @@
+{% extends "invApp/layout.html" %}
+
+{% block title %} F1Tickets {% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Ticket Management System</h1>
+        <p class="lead">
+            Manage tickets efficiently and effectively.
+        </p>
+        <hr class="my-4">
+        <p>
+            Use the navigation bar to add, view, update, or delete tickets.
+        </p>
+        <a href="{% url 'product_list' %}" class="btn btn-lg red-btn" role="button">View Tickets</a>
+    </div>
+
+    <div class="container">
+        <h2>F1 Tickets 2025</h2>
+        <p>Here you can view the ticket information for F1 races throughout the 2025 season.</p>
+
+        {% load static %}
+        <img class="logo" src="{% static 'images/f1_logo.png' %}" alt="F1 Logo">
+
+        <ul>
+            {% for ticket in tickets %}
+                <li>{{ ticket }}</li>
+            {% endfor %}
+        </ul>
+        <form action="{% url 'contact' %}" method="get">
+            <button type="submit" class="btn btn-lg red-btn">Email Customer Support Team</button>
+        </form>
+    </div>
+
+    <div class="container" id="login-card">
+        <h2>You are successfully logged in.</h2>
+        <p>Welcome, {{ request.user.username }}!</p>
+        <a href="{% url 'protected' %}">Go to your Protected Page here.</a>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-lg red-btn">Logout</button>
+        </form>
+    </div>
+
+{% endblock %}

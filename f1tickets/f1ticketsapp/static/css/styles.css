@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.success-message {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.success-message h1 {
+    font-size: 24px;
+}
+
+.success-message p {
+    font-size: 18px;
+}
+
+.success-message a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.success-message a:hover {
+    background-color: #f0f0f0;
+}
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    display: block;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contactbtn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    background-color: #f10c0c;
+}
+
+.contactbtn:hover {
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+    font-size: 24px;
+}
+
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+button, .indexbtn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+button:hover, .indexbtn:hover {
+    background-color: #f0f0f0;
+}
+
+.red-btn {
+    background-color: #f10c0c; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none; /* Removes underline */
+}
+
+.red-btn:hover {
+    background-color: #c20909; /* Darker red on hover */
+    color: white;
+}
+
+.card {
+    border: 5px solid #f10c0c; /* Red border */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f10c0c;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.error {
+    color: #f10c0c; 
+    margin-top: 10px;
+    text-align: center;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f10c0c;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
