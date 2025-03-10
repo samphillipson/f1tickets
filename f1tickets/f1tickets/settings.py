@@ -120,13 +120,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = 'images/'
+MEDIA_URL = '/images/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Adjust the path based on where your static files are located
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'f1ticketsapp', 'static')]
 
-STATIC_ROOT = BASE_DIR / "staticfiles"  # The folder where static files will be collected
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Redirect to the index page after login
 
